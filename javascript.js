@@ -1,8 +1,9 @@
 const container = document.querySelector("#container");
 
+let userInput = 16;
 
-for (i = 0; i < 9; i++) {
+for (i = 0; i < (userInput**2); i++) {
     const square = document.createElement("div");
-    square.style.cssText = "flex-grow: 1; outline: 2px solid red;"
+    square.style.cssText = `width: ${500/userInput}px; aspect-ratio: 1/1; outline: 1px solid black;`
     container.appendChild(square);
 }
