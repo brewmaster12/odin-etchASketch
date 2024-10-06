@@ -2,10 +2,14 @@ const container = document.querySelector("#container");
 
 function generateSquares(userInput) {
     for (i = 0; i < (userInput**2); i++) {
+
         const square = document.createElement("div");
-        square.style.cssText = `width: ${500/userInput}px; aspect-ratio: 1/1; outline: 1px solid black;`
+        square.style.cssText = `width: ${500/userInput}px; aspect-ratio: 1/1; outline: 1px solid black;`;
+        let lightness = 0;
         square.addEventListener("mouseenter", () => {
+            lightness += 10;
             square.style.background = "#" + (Math.floor(Math.random()*16777215).toString(16));
+            square.style.opacity = `${lightness}%`;
         })
         container.appendChild(square);
     }
