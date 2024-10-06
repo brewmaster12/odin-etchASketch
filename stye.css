@@ -13,6 +13,6 @@ button {
     width: 500px;
     height: 500px;
     margin: auto;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
 }
