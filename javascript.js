@@ -5,7 +5,7 @@ function generateSquares(userInput) {
         const square = document.createElement("div");
         square.style.cssText = `width: ${500/userInput}px; aspect-ratio: 1/1; outline: 1px solid black;`
         square.addEventListener("mouseenter", () => {
-            square.style.background = "red";
+            square.style.background = "#" + (Math.floor(Math.random()*16777215).toString(16));
         })
         container.appendChild(square);
     }
