@@ -1,2 +1,2 @@
 # odin-etchASketch
-This project will test my skills in CSS (especially flexbox) and javascript DOM methods
+https://www.theodinproject.com/lessons/foundations-etch-a-sketch#assignment
